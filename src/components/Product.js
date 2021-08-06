@@ -19,26 +19,26 @@ function Product({ id, title, price, description, category, image }) {
         {category}
       </p>
       <Image src={image} alt="" height={200} width={200} objectFit="contain" />
-      <h4 className='my-3'>{title}</h4>
+      <h4 className="my-3">{title}</h4>
 
       <div className="flex">
         {Array(rating)
           .fill()
           .map((_, i) => (
-            <StarIcon className="h-5 text-yellow-500" />
+            <StarIcon key={i} className="h-5 text-yellow-500" />
           ))}
       </div>
-      <p className='text-xs my-2 line-clamp-2'>{description}</p>
-      <div className='mb-5'>
+      <p className="text-xs my-2 line-clamp-2">{description}</p>
+      <div className="mb-5">
         <Currency quantity={price} currency="CAD" />
       </div>
       {isPrime && (
-        <div className='flex items-center space-x-2 -mt-5'>
-          <img className='w-12' src="https://bit.ly/3fDEqip" alt="" />
-          <p className='text-xs text-gray-500'>FREE Next-day Delivery</p>
+        <div className="flex items-center space-x-2 -mt-5">
+          <img className="w-12" src="https://bit.ly/3fDEqip" alt="" />
+          <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
-      <button className='mt-auto button'>Add to Cart</button>
+      <button className="mt-auto button">Add to Cart</button>
     </div>
   );
 }
