@@ -1,4 +1,4 @@
-import Image from "next/image"
+// import Image from "next/image"
 import Product from "./Product"
 
 function ProductFeed({products}) {
@@ -17,7 +17,7 @@ function ProductFeed({products}) {
                 image={image}
                 />
             ))}
-            {/* <Image className="md:col-span-full" src='https://bit.ly/3Auw19h' alt='' /> */}
+            <img className="md:col-span-full" src='https://bit.ly/3Auw19h' alt='' />
 
             <div className='md:col-span-2'>
             {products.slice(4,5).map(({id, title, price, description, category, image}) => (
