@@ -30,12 +30,12 @@ function Header() {
         {/* right */}
         <div className="text-white flex items-centertext-xs space-x-6 mx-6 whitespace-nowrap">
           <div className="link">
-            <p>first</p>
-            <p className="font-extrabold md:text-sm">acount & list</p>
+            <p>Hello, Nader</p>
+            <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
           <div className="link">
-            <p>returns</p>
-            <p className="font-extrabold md:text-sm">&orders</p>
+            <p>Returns</p>
+            <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
           <div className="relative flex items-center link">
             <span className="absolute top-0 right-0 md:right-10 h-6 w-6 bg-yellow-400 text-center rounded-full text-black font-bold">
@@ -43,7 +43,7 @@ function Header() {
             </span>
             <ShoppingCartIcon className="h-10" />
             <p className="hidden md:inline mt-2 font-extrabold md:text-sm">
-              basket
+              Cart
             </p>
           </div>
         </div>
@@ -54,8 +54,8 @@ function Header() {
           <MenuIcon className="h-6 mr-1" />
           All
         </p>
-        <p className='link'>Prime Video</p>
-        <p className='link'>Amazon Business</p>
+        <p className='link'>Gift Ideas</p>
+        <p className='link'>Coupons</p>
         <p className='link'>Today's Deals</p>
         <p className='link hidden lg:inline-flex'>Electronics</p>
         <p className='link hidden lg:inline-flex'>Food & Grocery</p>
