@@ -39,7 +39,7 @@ function Header() {
             <p className="font-extrabold md:text-sm">& Orders</p>
           </div>
           <div className="relative flex items-center link">
-            <span className="absolute top-0 right-0 md:right-10 h-6 w-6 bg-yellow-400 text-center rounded-full text-black font-bold">
+            <span className="absolute top-0 right-0 md:right-7 h-6 w-6 bg-yellow-400 text-center rounded-full text-black font-bold">
               0
             </span>
             <ShoppingCartIcon className="h-10" />
@@ -57,7 +57,7 @@ function Header() {
         </p>
         <p className='link'>Gift Ideas</p>
         <p className='link'>Coupons</p>
-        <p className='link'>Today's Deals</p>
+        <p className='link'>Fashion</p>
         <p className='link hidden lg:inline-flex'>Electronics</p>
         <p className='link hidden lg:inline-flex'>Food & Grocery</p>
         <p className='link hidden lg:inline-flex'>Prime</p>

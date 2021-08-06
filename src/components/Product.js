@@ -34,7 +34,7 @@ function Product({ id, title, price, description, category, image }) {
       </div>
       {isPrime && (
         <div className="flex items-center space-x-2 -mt-5">
-          <img className="w-12" src="https://bit.ly/3fDEqip" alt="" />
+          <img className="w-12" src="https://bit.ly/3fDEqip" alt=""/>
           <p className="text-xs text-gray-500">FREE Next-day Delivery</p>
         </div>
       )}
