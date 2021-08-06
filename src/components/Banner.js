@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Carousel } from "react-responsive-carousel";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 
@@ -14,13 +15,13 @@ function Banner() {
         interval={3000}
       >
         <div>
-          <img src="https://bit.ly/3imZvPX" loading="lazy" alt="" />
+          <Image src="https://bit.ly/3imZvPX" loading="lazy" alt="" height={1080} width={1920}/>
         </div>
         <div>
-          <img src="https://bit.ly/3xsBz27" loading="lazy" alt="" />
+          <Image src="https://bit.ly/3xsBz27" loading="lazy" alt="" height={1080} width={1920}/>
         </div>
         <div>
-          <img src="https://bit.ly/3fxfuZN" loading="lazy" alt="" />
+          <Image src="https://bit.ly/3fxfuZN" loading="lazy" alt="" height={1080} width={1920}/>
         </div>
       </Carousel>
     </div>
