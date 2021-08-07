@@ -7,6 +7,10 @@ import {
 import {signIn, signOut, useSession} from 'next-auth/client'
 
 function Header() {
+
+  const [session] = useSession()
+
+
   return (
     <header>
       {/* top header */}
@@ -31,8 +35,10 @@ function Header() {
         </div>
         {/* right */}
         <div className="text-white flex items-centertext-xs space-x-6 mx-6 whitespace-nowrap">
-          <div className="link" onClick={signIn}>
-            <p>Hello, Nader</p>
+          <div className="link" onClick={!session ? signIn : signOut}>
+            <p>
+            {session ? `Hello, ${session.user.name}` : 'Sign in'}
+            </p>
             <p className="font-extrabold md:text-sm">Account & Lists</p>
           </div>
           <div className="link">
