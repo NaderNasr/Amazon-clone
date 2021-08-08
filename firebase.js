@@ -1,10 +1,10 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyB0seHh77PzAC130mFgrXcKro6zwZx8yEw",
-    authDomain: "nextjs-baf61.firebaseapp.com",
-    projectId: "nextjs-baf61",
-    storageBucket: "nextjs-baf61.appspot.com",
-    messagingSenderId: "5350174486",
-    appId: "1:5350174486:web:51e24b287d701dfbeeaa37"
+    apiKey: "AIzaSyC0LpdBJtCLCSdlmH1wjbp0GjvxvxnOTxA",
+    authDomain: "nextjs-amzn-clone.firebaseapp.com",
+    projectId: "nextjs-amzn-clone",
+    storageBucket: "nextjs-amzn-clone.appspot.com",
+    messagingSenderId: "333431822417",
+    appId: "1:333431822417:web:f8cb5e7b6bf4838d2a0070"
   };
