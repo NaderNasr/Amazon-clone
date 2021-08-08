@@ -11,7 +11,20 @@ export const cartSlice = createSlice({
     addToCart: (state, action) => {
       state.items = [...state.items, action.payload]
     },
-    removeFromCart: (state, action) => {},
+    removeFromCart: (state, action) => {
+      const idx = state.items.findIndex(cartItem => cartItem.id === action.payload.id)
+      let newCart = [...state.items]
+      if(idx >= 0){
+        //remove if exists
+        newCart.splice(idx, 1)
+      } else {
+        console.warn(
+          `Cant remove product (id: ${action.payload.id}) as it's not in your cart`
+        )
+      }
+
+      state.items = newCart;
+    },
   },
 });
 

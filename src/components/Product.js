@@ -18,7 +18,7 @@ function Product({ id, title, price, description, category, image }) {
   
   const AddItemToCart = () => {
     const product = {
-      id, title, price, description, category, image
+      id, title, price, description, category, image, isPrime
     }
     //add item to redux store - cartSlice
     dispatch(addToCart(product))
