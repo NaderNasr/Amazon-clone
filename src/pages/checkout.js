@@ -40,7 +40,7 @@ function Checkout() {
                 </div>
                 
                 {/* Right Section */}
-                <div className='flex flex-col bg-white p-10 shadow-md'>
+                <div className={`flex flex-col bg-white p-10 shadow-md ${!items.length && 'hidden'}`}>
                    {items.length > 0 && (
                        <>
                         <h2 className='whitespace-nowrap'>Subtotal ({items.length} items):{" "}
