@@ -3,7 +3,7 @@ import { CurrencyDollarIcon } from "@heroicons/react/solid";
 import Image from "next/image";
 import { useState } from "react";
 import Currency from "react-currency-formatter";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { addToCart, removeFromCart } from "../slices/basketSlice";
 
 function CheckoutProduct({
@@ -44,6 +44,8 @@ function CheckoutProduct({
     //push into redux
     dispatch(addToCart(product));
   };
+
+  
 
   const RemoveItemToCart = () => {
     dispatch(removeFromCart({ id }));
