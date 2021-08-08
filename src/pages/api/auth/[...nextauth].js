@@ -9,5 +9,5 @@ export default NextAuth({
       clientSecret: process.env.Google_SECRET
     }),
   ],
-  database: process.env.DATABASE_URL,
+  // database: process.env.DATABASE_URL,
 })
