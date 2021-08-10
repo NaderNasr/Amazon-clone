@@ -1,10 +1,10 @@
 import firebase from 'firebase'
 
 const firebaseConfig = {
-    apiKey: "AIzaSyC0LpdBJtCLCSdlmH1wjbp0GjvxvxnOTxA",
-    authDomain: "nextjs-amzn-clone.firebaseapp.com",
-    projectId: "nextjs-amzn-clone",
-    storageBucket: "nextjs-amzn-clone.appspot.com",
-    messagingSenderId: "333431822417",
-    appId: "1:333431822417:web:f8cb5e7b6bf4838d2a0070"
-  };
+  apiKey: "AIzaSyAqv1yZlk1msEGrRaZW_k8WAJ-q0a7at9k",
+  authDomain: "ecom-322415.firebaseapp.com",
+  projectId: "amazon-ecom-322415",
+  storageBucket: "amazon-ecom-322415.appspot.com",
+  messagingSenderId: "64688926539",
+  appId: "1:64688926539:web:b05b65390e3f8a76f9c2ce"
+};

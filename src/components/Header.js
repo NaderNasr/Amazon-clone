@@ -39,14 +39,16 @@ function Header() {
         </div>
         {/* right */}
         <div className="text-white flex items-centertext-xs space-x-6 mx-6 whitespace-nowrap">
-          {/* <div className="link" onClick={!session ? signIn : signOut}> */}
+          <div className="link" onClick={!session ? signIn : signOut}>
           <div className="link">
 
             <p>Hello, Nader</p>
 
-            {/* <p>{session ? `Hello, ${session.user.name}` : "Sign in"}</p> */}
-            <p className="font-extrabold md:text-sm">Account & Lists</p>
+            <p>{session ? `Hello, ${session.user.name}` : "Sign in"}</p>
+            {/* <p className="font-extrabold md:text-sm">Account & Lists</p> */}
           </div>
+      </div>
+
           <div className="link">
             <p>Returns</p>
             <p className="font-extrabold md:text-sm">& Orders</p>
@@ -80,6 +82,7 @@ function Header() {
         <p className="link hidden lg:inline-flex">Shopper Toolkit</p>
         <p className="link hidden lg:inline-flex">Health & Personal Care</p>
       </div>
+      
     </header>
   );
 }
